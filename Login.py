@@ -17,7 +17,7 @@ username_field = 'username'
 password_field = 'password'
 profile_button = '//div[contains(@class, "profileButton")]'
 submit_button = '//*[@type="submit"]'
-check_username = '//a[@data-cro-id="header-profile-detail"]//span[text()="ali bashogh"]'
+check_username = '//a[@data-cro-id="header-profile-detail"]//span[text()="{}"]'.format(complete_name)
 
 
 driver = webdriver.Chrome()
@@ -39,6 +39,9 @@ try:
     web_wait(profile_button)
     driver.find_element(By.XPATH, profile_button).click()
     driver.find_element(By.XPATH, check_username)
+
+    print('Your Name Was Success Fully Found!')
+
 except:
     print('Your Login Test Was Failed!')
 

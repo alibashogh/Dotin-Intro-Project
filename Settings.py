@@ -1,4 +1,5 @@
 url = 'https://digikala.com/'
-username = 'please insert your username'
-password = 'please insert your password'
+username = 'alibashogh8@gmail.com'
+password = 'ali201414'
+complete_name = 'ali bashogh'
 default_timeout = 10
